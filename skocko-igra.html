@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="skocko-stil.css">
+    <script src="skocko-igra.js"></script>
+    <title>Igra</title>
+</head>
+<body>
+    <div class="container-fluid background">
+        <div class="row">
+            <div class="col">&nbsp;</div>
+            <div class="col-12 instructions">
+                <h1 class="header" id="player">Igrac 1</h1>
+            </div>
+            <div class="col">&nbsp;</div>    
+        </div>
+
+        <div class="row">
+            <div class="col-3 offset-2">
+                <table id="guessTable" class="myTable">
+                    <tr>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                    </tr>
+                    
+                </table>
+            </div>
+
+            <div class="col-1">
+                <table class="myTable">
+                    <tr>
+                        <td><img src="skocko-dodatno/arrow.png" alt="" class="logo_game"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="skocko-dodatno/arrow.png" alt="" class="logo_game"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="skocko-dodatno/arrow.png" alt="" class="logo_game"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="skocko-dodatno/arrow.png" alt="" class="logo_game"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="skocko-dodatno/arrow.png" alt="" class="logo_game"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="skocko-dodatno/arrow.png" alt="" class="logo_game"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="skocko-dodatno/arrow.png" alt="" class="logo_game"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-2">
+                <table class="myTable2" id="resultTable">
+                    <tr>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                        <td><img src="skocko-dodatno/gray.png" alt="" class="guess"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-2">
+                <button class="btn btn-warning newGame offset-5" onclick="newGame()">New game</button>
+                <h1>&nbsp;</h1>
+                <h2 class="header" id="timer"></h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                &nbsp;
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                &nbsp;
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3 offset-2">
+                <table class="myTable" id="result">
+                    <tr>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                        <td><img src="skocko-dodatno/empty.png" alt="" class="logo_game"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-2 settings">
+                <button class="btn btn-success btn-lg" onclick="confirmCombination()">Potvrdi</button>
+                <button class="btn btn-danger btn-lg" onclick="eraseSymbol()">Obrisi</button>
+            </div>
+
+            <div class="col">
+                <table class="myTable" id="result">
+                    <tr>
+                        <td><img src="skocko-dodatno/heart.png" alt="" class="logo_game" onclick="addSymbol(this.src)"></td>
+                        <td><img src="skocko-dodatno/spade.png" alt="" class="logo_game" onclick="addSymbol(this.src)"></td>
+                        <td><img src="skocko-dodatno/clubs.png" alt="" class="logo_game" onclick="addSymbol(this.src)"></td>
+                        <td><img src="skocko-dodatno/diamond.png" alt="" class="logo_game" onclick="addSymbol(this.src)"></td>
+                        <td><img src="skocko-dodatno/star.png" alt="" class="logo_game" onclick="addSymbol(this.src)"></td>
+                        <td><img src="skocko-dodatno/smiley.png" alt="" class="logo_game" onclick="addSymbol(this.src)"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

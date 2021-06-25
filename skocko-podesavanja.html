@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="skocko-stil.css">
+    <script src="skocko-podesavanja.js"></script>
+    <title>Podesavanja</title>
+</head>
+<body>
+    <div class="container-fluid background">
+        <div class="row">
+            <div class="col">&nbsp;</div>
+            <div class="col-12 instructions">
+                <h1 class="header">Zadavanje kombinacija</h1>
+            </div>
+            <div class="col">&nbsp;</div>
+            <div class="col-12 settings" id="currentPlayerSettingCombination">
+                Prvi igrac:
+            </div>
+            <div class="col-12 settings">
+                <img src="skocko-dodatno/heart.png" alt="" class="logo_settings" onclick="addSymbol(this.src)">
+                <img src="skocko-dodatno/spade.png" alt="" class="logo_settings" onclick="addSymbol(this.src)">
+                <img src="skocko-dodatno/clubs.png" alt="" class="logo_settings" onclick="addSymbol(this.src)">
+                <img src="skocko-dodatno/diamond.png" alt="" class="logo_settings" onclick="addSymbol(this.src)">
+                <img src="skocko-dodatno/star.png" alt="" class="logo_settings" onclick="addSymbol(this.src)">
+                <img src="skocko-dodatno/smiley.png" alt="" class = "logo_settings" onclick="addSymbol(this.src)">
+            </div>
+            <div class="col">&nbsp;</div>
+
+            <div class="col-12 settings">
+                Kombinacija:
+            </div>
+            <div class="col-12 settings">
+                <img src="skocko-dodatno/empty.png" alt="" class="logo_settings" id="empty0">
+                <img src="skocko-dodatno/empty.png" alt="" class="logo_settings" id="empty1">
+                <img src="skocko-dodatno/empty.png" alt="" class="logo_settings" id="empty2">
+                <img src="skocko-dodatno/empty.png" alt="" class="logo_settings" id="empty3">
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="col">
+                &nbsp;
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                &nbsp;
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                &nbsp;
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                &nbsp;
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                &nbsp;
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col settings">
+                <button class="btn btn-success btn-lg" onclick="confirmCombination()">Potvrdi</button>
+                <button class="btn btn-danger btn-lg" onclick="eraseSymbol()">Obrisi</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
